@@ -1,0 +1,35 @@
+{
+  "name": "vendorcheck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node build/index.js",
+    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q build/index.js\""
+  },
+  "author": "xiej2520",
+  "license": "ISC",
+  "dependencies": {
+    "@types/adm-zip": "^0.5.0",
+    "adm-zip": "^0.5.10",
+    "axios": "^1.4.0",
+    "bungie-api-ts": "^4.22.3",
+    "config": "^3.3.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/config": "^3.3.0",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.3.1",
+    "@types/sqlite3": "^3.1.8",
+    "concurrently": "^8.2.0",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.1.6"
+  }
+}
